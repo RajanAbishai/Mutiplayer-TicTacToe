@@ -12,10 +12,12 @@ public class GridPosition : MonoBehaviour//,IPointerDownHandler
     // add a raycaster to the main camera. Physics 2D raycaster is what is going to allow that function to be called. We also need an EventSystem.
     
     */
+    [SerializeField] private int x, y;
+
 
     private void OnMouseDown()
     {
-        Debug.Log("Click");
+        Debug.Log("Clicked position: " +x +","+ y);
        
     }
 
