@@ -13,12 +13,14 @@ public class GridPosition : MonoBehaviour//,IPointerDownHandler
     
     */
     [SerializeField] private int x, y;
+    [SerializeField] private GameManager gameManager;
 
 
     private void OnMouseDown()
     {
         Debug.Log("Clicked position: " +x +","+ y);
-       
+        gameManager.ClickedOnGridPosition(x, y);
+
     }
 
 
