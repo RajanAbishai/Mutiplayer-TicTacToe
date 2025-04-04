@@ -14,42 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: tictactoengofree
-  lastShownTimestamp: 1743266527
+  lastShownTimestamp: 1743774366
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1743266527
+  checkedLastUpdateTimestamp: 1743774366
   lastQOTDResponse:
-    questionId: 165
-    questionText: 'Does this variable get reset when you load a different Scene?
-
-      <p>private
-      static int score;</p>'
-    answerA: Yes
-    answerB: No
-    answerC: Only when loading the Main Menu
+    questionId: 167
+    questionText: Where is the modulo % operator particularly useful?
+    answerA: Looping back on a list
+    answerB: Counting elements in a list
+    answerC: Creating a new list with size
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1743266527
+  lastQotdTimestamp: 1743774366
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleSyntyMar25Extended.png
-    topText: Make ANY game with these awesome Assets! (97% OFF!)
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleEnvironmentsApr25.png
+    topText: Gorgeous Realistic and Stylized Environments at 99% OFF!
     topLink: humblebundle
     bottomText: Learn Unity DOTS for MASSIVE Performance Boosts! (and make an RTS)
     bottomLink: dotscourse
-  lastDynamicHeaderTimestamp: 1743266527
+  lastDynamicHeaderTimestamp: 1743774366
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1743266527
+  websiteLatestMessageTimestamp: 1743774366
   websiteLatestVideos:
     videos:
+    - youTubeId: 79an2JDe51g
+      title: NO MORE PROGRAMMING, let's do Pen Spinning instead!
+    - youTubeId: BR1HFAj2v-Y
+      title: This GAME made $28 MILLION! Why?
     - youTubeId: SJClo9ny1kM
       title: TOP 20 Visual Assets to INSPIRE YOU! (MARCH 2025)
     - youTubeId: 2-B1HH0rWRI
       title: EVERYTHING Steam did in 2024! (Devs NEED to Know)
-    - youTubeId: QYrKiHq7Vaw
-      title: TOP 10 NEW Systems and Tools MARCH 2025! | Unity Asset Store
-    - youTubeId: ZIg7VoD9ptI
-      title: The FUTURE of Unity in 2025 and BEYOND!
-  websiteLatestVideosTimestamp: 1743266527
+  websiteLatestVideosTimestamp: 1743774366
