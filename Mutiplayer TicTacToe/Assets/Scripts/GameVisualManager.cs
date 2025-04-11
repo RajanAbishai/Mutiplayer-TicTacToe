@@ -14,12 +14,15 @@ public class GameVisualManager : MonoBehaviour
 
     private void GameManager_OnClickedOnGridPosition(object sender, GameManager.OnClickedOnGridPositionEventArgs e)
     {
-        //Instantiate(crossPrefab)
+        Instantiate(crossPrefab, GetGridWorldPosition (e.x, e.y), Quaternion.identity);
+        
+        //We want no rotation.. hence, quaternion.identity.
 
     }
 
     private Vector2 GetGridWorldPosition(int x, int y)
     {
-        return new Vector2();
+        return new Vector2(-GRID_SIZE + x*GRID_SIZE, -GRID_SIZE + y*GRID_SIZE);
+
     }
 }
