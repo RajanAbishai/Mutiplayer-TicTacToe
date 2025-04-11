@@ -1,3 +1,4 @@
+using Unity.Netcode;
 using UnityEngine;
 
 public class GameVisualManager : MonoBehaviour
@@ -14,9 +15,15 @@ public class GameVisualManager : MonoBehaviour
 
     private void GameManager_OnClickedOnGridPosition(object sender, GameManager.OnClickedOnGridPositionEventArgs e)
     {
-        Instantiate(crossPrefab, GetGridWorldPosition (e.x, e.y), Quaternion.identity);
-        
         //We want no rotation.. hence, quaternion.identity.
+
+        Transform spawnedCrossTransform = Instantiate(crossPrefab);
+
+        // this says that the object SHOULD be spawned across the network.. meaning it should get spawned on all clients.
+        spawnedCrossTransform.GetComponent<NetworkObject>().Spawn(true);
+        spawnedCrossTransform.position = GetGridWorldPosition(e.x, e.y); // will produce networking error
+        
+        
 
     }
 
