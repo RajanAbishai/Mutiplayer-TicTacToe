@@ -15,17 +15,23 @@ public class GameVisualManager : MonoBehaviour
 
     private void GameManager_OnClickedOnGridPosition(object sender, GameManager.OnClickedOnGridPositionEventArgs e)
     {
-        //We want no rotation.. hence, quaternion.identity.
 
+        SpawnObject(e.x, e.y);
+
+        
+    }
+    // earlier, produced networking error. Fixed by putting in another function and with RPC
+    // this says that the object SHOULD be spawned across the network.. meaning it should get spawned on all clients.
+
+    /*This is done so that the below function can be made an RPC rather than the function listening to the event an RPC*/
+    private void SpawnObject(int x,int y)
+    {
         Transform spawnedCrossTransform = Instantiate(crossPrefab);
-
-        // this says that the object SHOULD be spawned across the network.. meaning it should get spawned on all clients.
         spawnedCrossTransform.GetComponent<NetworkObject>().Spawn(true);
-        spawnedCrossTransform.position = GetGridWorldPosition(e.x, e.y); // will produce networking error
-        
-        
+        spawnedCrossTransform.position = GetGridWorldPosition(x, y); 
 
     }
+
 
     private Vector2 GetGridWorldPosition(int x, int y)
     {
